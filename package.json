@@ -1,0 +1,25 @@
+{
+  "author": "Carter Rabasa <carter@twilio.com> (http://twitter.com/carterrabasa)",
+  "name": "cascadiajs.com",
+  "description": "The website for the CascadiaJS conference",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crabasa/cascadiajs.git"
+  },
+  "engines": {
+    "node": "~0.6.10"
+  },
+  "dependencies": {
+    "node-static": "0.5.9"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "subdomain": "cascadiajs",
+  "domains": [
+    "cascadiajs.com"
+  ],
+  "scripts": {
+    "start": "server.js"
+  }
+}
