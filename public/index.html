@@ -1,11 +1,54 @@
+<!--
+CascadiaJS 2012
+Seattle, WA
+November 8-9
+@cascadiajs
+-->
 <!doctype html>
 <html>
 	<head>
 		<title>CascadiaJS 2012</title>
+		<style>
+			body  {
+				width:600px;
+				margin:20px auto;
+				text-align: center;
+				font-family: 'Hi Segoe';
+				-webkit-font-smoothing: antialiased;
+			}
+
+			@font-face {
+			  font-family: 'Hi Segoe';
+			  src: url("/fonts/segoe_ui.eot");
+			  /* IE9 Compat Modes */
+			  src: local("Segoe UI"), local("Segoe"), local("Segoe WP"), url("/fonts/segoe_ui.eot?#iefix") format("embedded-opentype"), url("/fonts/segoe_ui.woff") format("woff"), url("/fonts/segoe_ui.ttf") format("truetype");
+			  font-weight: normal;
+			  font-style: normal; 
+			}
+
+			@font-face {
+			  font-family: 'SegoeLight';
+			  src: url("/fonts/segoe_ui_light.eot");
+			  /* IE9 Compat Modes */
+			  src: local("Segoe UI Light"), local("Segoe WP Light"), url("/fonts/segoe_ui_light.eot?#iefix") format("embedded-opentype"), url("/fonts/segoe_ui_light.woff") format("woff"), url("/fonts/segoe_ui_light.ttf") format("truetype");
+			  font-weight: normal;
+			  font-style: normal; 
+			}
+
+			#header {
+				color: #0BB5FF;
+				font-size: 20px;
+				margin: 10px;
+			}
+
+		</style>
 	</head>
 	<body>
-		<h1>CascadiaJS 2012</h1>
-		<h2>Seattle, WA</h2>
-		<h2>November 8-9</h2>
+		<div id="header">November 8 - 9, 2012 | Seattle, WA</div>
+		<div id="logo"><img src="/images/logo.png" alt="CascadiaJS logo"/></div>
+		<div id="content">
+			<a href="https://twitter.com/CascadiaJS" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @CascadiaJS</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div>	
 	</body>
 </html>
