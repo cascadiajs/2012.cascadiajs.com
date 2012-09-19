@@ -7,3 +7,36 @@ body {
 #logo {
 	margin:10px;
 }
+
+.frame{
+    display:inline-block;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.frame>img{
+    vertical-align:top;
+}
+
+.frame, .frame:before{
+    border-radius:10px;
+
+}
+
+.frame>img{
+    border-radius:10px;
+}
+
+.frame:before{
+    content:'';
+    display:block;
+    position:absolute;
+    left:0;
+    right:0;
+    width:100%;
+    height:100%;
+    margin:-10px;
+    border:10px solid #1a1a1a;
+
+}
