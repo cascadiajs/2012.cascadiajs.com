@@ -2,7 +2,7 @@
   "author": "Carter Rabasa <carter@twilio.com> (http://twitter.com/carterrabasa)",
   "name": "cascadiajs.com",
   "description": "The website for the CascadiaJS conference",
-  "version": "0.0.1-9",
+  "version": "0.0.1-10",
   "repository": {
     "type": "git",
     "url": "git://github.com/crabasa/cascadiajs.com.git"
