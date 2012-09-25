@@ -3,8 +3,8 @@ How To Submit A Proposal
 
 * Create a **Github account** if you don't have one already
 * **Fork this repository**
-* **Create and commit a .MD file** in this directory named after the talk title and your name. For example, if your talk is called "Intro To Node.js" and your name is Jane Doe, name the file **~/proposal/intro-to-nodejs_jane-doe.md** (Checkout the [example template](https://github.com/cascadiajs/cascadiajs.github.com/blob/master/proposal/proposal-template_jane-doe.md))
-* **Commit an image of yourself** in this directory, named after your github id. Format should be PNG, 256x256 Eg: **~/proposal/janedoe.png**
+* **Create and commit a .MD file** in this directory named after the talk title and your name. For example, if your talk is called "Intro To Node.js" and your name is Jane Doe, name the file ~/proposal/**intro-to-nodejs_jane-doe.md** (Checkout the [example template](https://github.com/cascadiajs/cascadiajs.github.com/blob/master/proposal/proposal-template_jane-doe.md))
+* **Commit an image of yourself** in this directory, named after your github id. Format should be PNG, 256x256 Eg: ~/proposal/**janedoe.png**
 * When you're ready, **submit a pull request**
 * **Send an email** to [carter.rabasa@gmail.com](mailto:carter.rabasa@gmail.com) to introduce yourself and so that we have a way to contact you if your talk is accepted.
 * **Wait patiently** (and *nicely*) for us to get back to you. We will respond to everyone who submits a proposal even if it's just to say "Thanks but no thanks".
