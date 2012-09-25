@@ -3,7 +3,7 @@ How To Submit A Proposal
 
 * Create a **Github account** if you don't have one already
 * **Fork this repository**
-* **Create and commit a .MD file** in this directory named after the talk title and your name. For example, if your talk is called "Intro To Node.js" and your name is Jane Doe, name the file ~/proposal/**intro-to-nodejs_jane-doe.md** (Checkout the [example template](https://github.com/cascadiajs/cascadiajs.github.com/blob/master/proposal/proposal-template_jane-doe.md))
+* **Create and commit a .MD file** in this directory named after the talk title and your Github ID. For example, if your talk is called "Intro To Node.js" and your Github ID is **janedoe**, name the file ~/proposal/**intro-to-nodejs_janedoe.md** (Checkout the [example template](https://github.com/cascadiajs/cascadiajs.github.com/blob/master/proposal/proposal-template_janedoe.md))
 * **Commit an image of yourself** in this directory, named after your github id. Format should be PNG, 256x256 Eg: ~/proposal/**janedoe.png**
 * When you're ready, **submit a pull request**
 * **Send an email** to [carter.rabasa@gmail.com](mailto:carter.rabasa@gmail.com) to introduce yourself and so that we have a way to contact you if your talk is accepted.
@@ -15,7 +15,7 @@ What should be in the proposal?
 
 Every proposal should have, at minimum, the following information: 
 
-* Your Name
+* Your Full Name
 * Your Availability (what days/times you are able to do this presentation)
 * Presentation Title
 * Presentation Description
@@ -25,7 +25,7 @@ If would be great if you could add in a short **personal bio** (50 words or less
 
 To make this easier, we've created a template you can copy and modify. See **proposal-template_jane-doe.md** in this directory.
 
-If you have any other artifacts that relate to your presentation, like slide decks, code samples, videos, etc, make a directory named the same as the .MD file from above, and put related files in there. For example, if my proposal was saved in **intro-to-nodejs_jane-doe.md**, I would place the example code in **~/cascadiajs.github.com/proposal/intro-to-nodejs_jane-doe/example-code.js** 
+If you have any other artifacts that relate to your presentation, like slide decks, code samples, videos, etc, make a directory named the same as the .MD file from above, and put related files in there. For example, if my proposal was saved in **intro-to-nodejs_janedoe.md**, I would place the example code in **~/cascadiajs.github.com/proposal/intro-to-nodejs_janedoe/example-code.js** 
 
 
 What are we looking for?
