@@ -1,4 +1,4 @@
-Lo-Dash for a better utility belt
+Lo-Dash for a better utility belt.
 ========================
 
 * Speaker   : John-David Dalton
