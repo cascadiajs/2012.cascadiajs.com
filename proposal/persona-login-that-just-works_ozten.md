@@ -17,6 +17,8 @@ The Web Platform.
 Speaker Bio
 -----------
 
+![ozten](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/ozten.jpg)
+
 I'm a Developer on the Mozilla Identity team. I've been hack with the web for many moons and love
 learning new tricks. Spell check is for the week!
 

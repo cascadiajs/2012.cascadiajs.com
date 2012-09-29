@@ -18,6 +18,8 @@ anwered and nothing else if you accept Andrew Ray's "Promises for Profit" talk!
 Speaker Bio
 -----------
 
+![delvaworld](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/delvarworld.png)
+
 I'm a JS and VIM loving developer from San Francisco. I've worked at
 Atlassian (don't blame me for JIRA) and currently and rocking the amazing
 startup Crowdtilt.

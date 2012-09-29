@@ -26,7 +26,7 @@ to replicate the application and play along as we go.
 Speaker Bio
 -----------
 
-![chewbranca](https://raw.github.com/cascadiajs/cascadiajs.github.com/proposal/images/chewbranca.png)
+![chewbranca](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/chewbranca.png)
 
 I'm a front end developer at [Cloudant](http://cloudant.com)
 specializing in data driven javascript applications and visualizations.
