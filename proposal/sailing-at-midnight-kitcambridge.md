@@ -1,8 +1,8 @@
 # Sailing at Midnight
 
-Speaker: Kit Cambridge
-Available: 11/8 - 11/9, 2012
-Duration: 30 minutes
+* Speaker: Kit Cambridge
+* Available: 11/8 - 11/9, 2012
+* Duration: 30 minutes
 
 # Description
 
