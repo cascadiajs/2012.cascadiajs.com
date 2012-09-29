@@ -30,6 +30,8 @@ but not experts and building complete web applications.
 Speaker Bio
 -----------
 
+![howardabrams](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/howardabrams.png)
+
 I built my first web app in 1993 when I traded in my Tk GUIs for Perl
 CGIs running on CERN's first implementation of `httpd`. After building
 many web apps in Java and icky JSPs (even creating my own framework
