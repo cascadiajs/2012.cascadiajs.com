@@ -13,7 +13,7 @@ Description
 Speaker Bio
 -----------
 
-![jandoe](https://raw.github.com/cascadiajs/cascadiajs.github.com/proposal/images/janedoe.png)
+![jandoe](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/janedoe.png)
 
 I'm a big furry mammal that likes to run through the forest and splash in the stream and I write code sometimes.
 
