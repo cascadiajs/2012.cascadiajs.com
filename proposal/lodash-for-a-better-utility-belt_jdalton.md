@@ -16,7 +16,7 @@ its performance gains, dive into its features, and explore some of the extra gee
 Speaker Bio
 -----------
 
-![jdalton](https://raw.github.com/jdalton/cascadiajs.github.com/jdalton/proposal/jdalton.png)
+![jdalton](https://raw.github.com/cascadiajs/cascadiajs.github.com/proposal/images/jdalton.png)
 
 I'm a Chakra performance program mananger at [Microsoft](http://blogs.msdn.com/b/ie/archive/2012/06/13/advances-in-javascript-performance-in-ie10-and-windows-8.aspx), co-maintainer of [jsPerf.com](http://jsperf.com), contributor to [Benchmark.js](http://benchmarkjs.com),
 advocate of spec compliant polyfills, library/framework enthusiast, tinkerer, bug fixer, and overall JS fanboy.

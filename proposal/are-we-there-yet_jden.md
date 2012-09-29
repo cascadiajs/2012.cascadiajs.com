@@ -9,7 +9,7 @@ Runtime: 30 - 60 minutes (as time allows)
 
 jden <jason@denizac.org> aka Jason Denizac
 
-![jden](https://raw.github.com/jden/cascadiajs.github.com/master/proposal/jden.png)
+![jden](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/jden.png)
 
 After declaring an Art History major and graduating with a degree in Political Science, Jason decided to become a javascript hacker bent on fixing health technology. When asked to list examples of software software he likes, he once responsed "text editors, mostly. And web browsers."
 

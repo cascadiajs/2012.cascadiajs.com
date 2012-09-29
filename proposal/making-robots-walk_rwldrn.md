@@ -13,7 +13,7 @@ Johnny-Five is a framework for programming Arduino robots on Node.js. Making Rob
 Speaker Bio
 -----------
 
-![rwldrn](https://raw.github.com/rwldrn/cascadiajs.github.com/rwldrn/proposal/rwldrn.png)
+![rwldrn](https://raw.github.com/cascadiajs/cascadiajs.github.com/proposal/images/rwldrn.png)
 
 
 I make things with JavaScript.
