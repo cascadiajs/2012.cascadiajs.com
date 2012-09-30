@@ -10,7 +10,7 @@ Description
 
 Streams are awesome. Witness what happens when you use them everywhere for everything.
 
-We'll walk through what the new 0.9 streams look like and then start applying abstractions until we have a fully working streaming web application, with all the usual features (reactive, real-time, distributed, peer to peer, etc)
+We'll walk through what the new 0.9 streams look like. We then look at how functional programming and streams play nicely. Once we have functional programming we can just pile on the abstractions until we have a fully working streaming web application, with all the usual features (reactive, real-time, distributed, peer to peer, etc)
 
 Speaker Bio
 -----------
