@@ -41,7 +41,7 @@ Personal Bio
 ------------
 Crude and cynical observer of the world.  Incurable optimist day-to-day.  Tinkers with APIs while consuming IPAs.
 
-![Chris Castle](https://raw.github.com/crcastle/cascadiajs.github.com/master/proposal/images/crcastle.jpg)
+![Chris Castle](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/crcastle.png)
 
 * I'm Chris Castle [crcastle@gmail.com](mailto:crcastle@gmail.com)
 * I twitter [@crc](http://twitter.com/crc)
