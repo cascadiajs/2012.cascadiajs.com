@@ -15,7 +15,7 @@ We will walk through what the new 0.9 streams look like. We then look at how fun
 Speaker Bio
 -----------
 
-![Raynos](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/raynos.jpg)
+![Raynos](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/raynos.png)
 
 I have a NPM addiction. I also make mad science JavaScript experiments.
 
