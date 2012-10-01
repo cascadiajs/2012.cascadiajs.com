@@ -13,7 +13,7 @@ Backbone, Knockout, Angular, Ember... all of these frameworks impose an Architec
 Speaker Bio
 -----------
 
-![Dusty Jewett](images/dustyjewett.jpg)
+![Dusty Jewett](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/dustyjewett.jpg)
 
 Dusty Jewett is a Software Engineer based in Seattle. He loves dynamic languages and compile-time error checking. He has served as the manager of the Web App Developers meetup for 5 years and Lead/Dev Manager for several companies, but finds the "Individual Contributor" role the most rewarding.
 
