@@ -13,9 +13,11 @@ JS is blowing up exponentially. NPM has over 15,000 packages, 20-30 JS framework
 Speaker Bio
 -----------
 
-![matthew_bergman](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/matthew_bergman.png)
+fotoverite <matt@novafabrica.com> aka Matthew Bergman
 
-I'm an expat from the ruby world trying to make it in great city of node and JS!
+![matthew_bergman](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/matthew_bergman.jpg)
+
+I'm an expat from the ruby world trying to make it in great city of node and JS! I'm the senior engineer at novafabrica where I work on rail applications and spend my spare time tinkering with other frameworks.
 
 Links
 -----
