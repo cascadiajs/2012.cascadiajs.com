@@ -8,7 +8,7 @@ In this presentation, we will cover the backbone plugin landscape, including a l
 
 troythewolfe <wolfestuff@gmail.com>
 
-![jden](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/troythewolfe.jpeg)
+![jden](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/troythewolfe.jpg)
 
 Troy Wolfe is a software engineer who loves all things UI, and has a visceral reaction to information design and rich interactivity.
 
