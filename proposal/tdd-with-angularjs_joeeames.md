@@ -8,7 +8,7 @@ TDD with AngularJS
 Description
 -----------
 
-AngularJS doesn't get the press or attention that Backbone and Knockout are getting, but this little MV* framework is one of the most elegant frameworks available for client-side development.  It has a unique dependency injection implementation that not only supports but actually embraces building applications using Test Driven Development.  Although no prior experience is assumed, this is NOT an introduction to AngularJS. We will be writing code and enhancing a real-world application. In doing so we will learn how AngularJS supports using TDD to write well structured and maintainable code.  Please come prepared to code.
+Are you struggling to do TDD in JavaScript?  AngularJS is a fantastic MV* framework from the brains at Google, built from the ground up with Unit Testing in mind.  It is quickly becoming the framework of choice for many JavaScript devs. It has a unique dependency injection implementation that not only supports but actually embraces building applications using Test Driven Development.  Although no prior experience is assumed, this is NOT an introduction to AngularJS. We will be writing code and enhancing a real-world application. In doing so we will learn how AngularJS supports using TDD to write well structured and maintainable code.  Please come prepared to code.
 
 Speaker Bio
 -----------
