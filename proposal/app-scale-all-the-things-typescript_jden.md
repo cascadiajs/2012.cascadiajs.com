@@ -1,15 +1,13 @@
-# "Are we there yet?"
-  _and other stuff you shouldn't have to care about_
+# App Scale All The Things - What's Up With TypeScript?
 
-By now you've heard a bit about promises (and if you haven't you probably
-should check them out). They're about more than cleaning up "callback soup" and
-making pretty APIs - they provide a great way to maintain clear separation of
-concerns in your asynchronous code. Logging, timing, "loading" status
-indicators - promises make it easy to keep your application DRY.
-Cross listed under `PROM 201 - Intermediate Applications of Promises`.
-Warning: contains code.
+Microsoft's newly announced TypeScript is the latest in the list of languages
+which compile to JavaScript. But unlike CoffeeScript or other alternatives,
+it's really just a thin veneer on top of plain old JS. So, TypeScript or
+HypeScript? Let's find out. For bonus fun, we'll look at the TypeScript
+compiler API and look at unobtrusive uses of TypeScript to make your libraries
+easier to consume.
 
-Runtime: 30 - 60 minutes (as time allows)
+Runtime: 30ish minutes (I'm flexible)
 
 ## By whom?
 
