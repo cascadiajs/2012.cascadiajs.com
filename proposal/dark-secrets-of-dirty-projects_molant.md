@@ -13,7 +13,7 @@ Microsoft's IE team has partnered with several companies to create new HTML5 exp
 
 Some of the projects that will be covered are:
 * The Hunger Games: http://thecapitoltour.pn
-* Prometheus Training Center: http://www.prometheus.com/trainingcenter
+* Prometheus Training Center: http://www.projectprometheus.com/trainingcenter
 * The XX - Coexist: http://coexist.thexx.info/
 And some others not publicly available yet (but that hopefully will be then)!
 
