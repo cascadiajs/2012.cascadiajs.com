@@ -9,7 +9,7 @@ Dark Secrets of Dirty Projects
 Description
 -------------
 
-Microsoft's IE team has partnered with several companies to create new HTML5 experiences. Plain Concepts is one of these companies and we have participated in several of these experiences (more or less involved). During this session we will review this experience not from a marketing point of view but from a developer's side. We will talk about the issues we had, the problems with the code, differences accross browsers (why all suck! that maybe you don't know and how to solve them (or at least keep them in mind!).
+Microsoft's IE team has partnered with several companies to create new HTML5 experiences. Plain Concepts is one of these companies and we have participated in several of these experiences (more or less involved). During this session we will review this experience not from a marketing point of view but from a developer's side. We will talk about the issues we had, the problems with the code, differences accross browsers that maybe you don't know and how to solve them (or at least keep them in mind!).
 
 Some of the projects that will be covered are:
 * The Hunger Games: http://thecapitoltour.pn
