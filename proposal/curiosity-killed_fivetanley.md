@@ -19,7 +19,14 @@ Our brains initially start with a blank state when we are born.  As we mature,
  or 'heuristics', are incredibly useful for some sets of problems. **Too often,
  I think we, or at least I personally, arrive at the conclusion of "I can't do this".**
 
-I'm wrong. You and I **can** do it.
+I'm wrong. You and I **can** do it. We don't have to tell each other lies that we can't.
+
+I hear lots of sentiments like this on the internet:
+
+* "I don't want to be around this person, they're *stupid*."
+* "Why would anybody do such an idiotic thing?"
+* "Not Invented Here! Not Invented Here! Look who's rewriting the wheel!"
+* "**JavaScript**? Why the hell would you write your app in JavaScript?"
 
 This year I was diagnosed with ADHD, and have been learning how to dispell
  the myths of worthlessness others told about me and that I unfortunately
@@ -31,7 +38,7 @@ In this talk is a sort of coming-of-age story about learning to embrace failure
  things The Right Way will take a backseat to honesty, emotions, communication,
  and self-improvement. It's about embracing your style, because somebody else
  probably has that style too. It's about finding what works for you, and
- working with others.
+ working with others. It's about putting others up instead of dragging them down.
 
 I'm hoping to dispel some JavaScript dogma as well.
 
