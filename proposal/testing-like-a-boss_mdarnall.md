@@ -13,7 +13,7 @@ From quick headless test runners to cloud-based services that can target all the
 
 Speaker Bio
 ---------------------------------
-![mdarnall](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/mdarnall.jpg)
+![mdarnall](https://raw.github.com/mdarnall/cascadiajs.github.com/master/proposal/images/mdarnall.jpg)
 
 I'm a developer living in sunny Portlandia. I'm all over the internets
 and love to build enjoyable applications for people to use. When I'm not
