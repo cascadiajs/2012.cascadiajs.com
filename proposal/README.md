@@ -1,7 +1,7 @@
 How To Submit A Proposal
 ========================
 
-*DEADLINE FOR SUBMISSIONS IS FRIDAY, OCTOBER 5*
+*THE DEADLINE HAS PASSED. THANK YOU, EVERYONE WHO SUBMITTED. THIS COMMUNITY IS AMAZING.*
 
 First and foremost, make sure you're available on both 11/8 and 11/9.  Once we have settled on the talks, we will be curating an agenda that groups like topics together.  More information at [cascadiajs.com](http://cascadiajs.com).
 
