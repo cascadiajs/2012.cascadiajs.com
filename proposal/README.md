@@ -1,7 +1,10 @@
+# TALK SUBMISSIONS FOR 2012 ARE CLOSED!!
+# THE DEADLINE HAS PASSED. THANK YOU, EVERYONE WHO SUBMITTED. THIS COMMUNITY IS AMAZING.*
+
+<hr />
+
 How To Submit A Proposal
 ========================
-
-*THE DEADLINE HAS PASSED. THANK YOU, EVERYONE WHO SUBMITTED. THIS COMMUNITY IS AMAZING.*
 
 First and foremost, make sure you're available on both 11/8 and 11/9.  Once we have settled on the talks, we will be curating an agenda that groups like topics together.  More information at [cascadiajs.com](http://cascadiajs.com).
 
