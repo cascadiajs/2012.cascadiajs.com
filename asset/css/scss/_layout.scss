@@ -1,0 +1,30 @@
+$block: 280px;
+
+.l-constrained {
+  width: $block * 3;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.l-column {
+  padding-left: 0;
+  margin: 3em 0 0 -1.5em;
+  list-style: none;
+}
+
+.l-single {
+  width: $block - 24px;
+  float: left;
+  margin-left: 1.5em;
+}
+
+.l-double {
+  width: $block * 2 - 24px;
+  float: left;
+  margin-left: 1.5em;
+}
+
+.first {
+  margin-left: 0;
+  clear: both;
+}

@@ -1,0 +1,316 @@
+@import 'compass/css3';
+
+.wf-active .sct-head {
+  text-transform: uppercase;
+}
+
+.logo {
+  margin-top: 1em;
+}
+
+.logotype {
+  margin-bottom: 0;
+
+  text-align: center;
+}
+
+.logotype-accent {
+  margin-left: 6px;
+
+  color: $accent;
+}
+
+.tagline {
+  margin-top: 0;
+  margin-bottom: 0.33em;
+
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn {
+  padding: 0.5em;
+  position: relative;
+  top: 0;
+
+  border: 1px solid rgba(0,0,0,0.2);
+
+  background-color: $accent;
+  background-image: url('../img/subtle_dots_green.png');
+
+  color: #FFF;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+
+  -webkit-user-drag: none;
+  -moz-user-drag: -moz-none;
+  user-drag: none;
+
+  @include border-radius(4px);
+  @include box-shadow(inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 1px rgba(0,0,0,0.2));
+  @include transition(0.1s ease top);
+
+  &:hover {
+    background-color: #FFF;
+    background-image: url('../img/subtle_dots.png');
+
+    border: 1px solid #999;
+
+    color: $accent;
+    text-decoration: none;
+    text-shadow: none;
+  }
+
+  &:active {
+    top: 2px;
+  }
+}
+
+.twitter {
+  background-image: url('../img/twitter.png');
+  height: 38px;
+  width: 38px;
+  display: inline-block;
+  margin-left: 1em;
+  position: relative;
+  top: 12px;
+
+  &:hover {
+    background-position: 0 40px;
+  }
+}
+
+.sct-break {
+  margin: 1.5em 0;
+  clear: both;
+
+  border: 1px solid #666;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-left: none;
+  border-right: none;
+
+  background-color: $accent;
+  background-image: url('../img/subtle_dots_green.png');
+}
+
+.sct-head {
+  color: #FFF;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.3);
+  font-size: 1.75em;
+}
+
+.lineup-block {
+  margin-left: 1.5em;
+  margin-bottom: 0.75em;
+  width: 148px;
+  height: 14.375em;
+  float: left;
+
+  text-align: center;
+}
+
+.csstransitions .lineup-block {
+  @include transition(all 0.3s ease);
+
+  &:hover .lineup-img {
+    top: -1.5em;
+  }
+}
+
+.lineup-img {
+  width: 100%;
+  position: relative;
+  top: 0;
+
+  border-radius: 100px;
+
+  @include box-shadow(0px 0px 1px rgba(0,0,0,0.3));
+  @include transition(top 0.3s ease);
+}
+
+.lineup-name {
+  margin: 0.75em 0 0;
+
+  font-size: 0.875em;
+  font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.lineup-text {
+  font-size: 0.875em;
+  margin: 0 0 0.75em;
+
+  color: $accent;
+}
+
+.agenda {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+
+  tr {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+
+    &:first-child {
+      border: none;
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  td {
+    padding: 0.5em 4em;
+    padding-left: 1em;    
+  }
+}
+
+.agenda-time {
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+
+.contacts-img {
+  width: 100px;
+  margin: 1.5em;
+  margin-left: 0;
+  margin-top: 0;
+  float: left;
+
+  @include border-radius(10px);
+  @include box-shadow(0 0 1px rgba(0,0,0,0.3), 0px -1px 0px rgba(0,0,0,0.3));
+}
+
+.header {
+  width: 100%;
+  height: 375px;
+  margin-bottom: -1.5em;
+
+  background: lighten(rgb(93, 170, 241), 30%) url('../img/subtle_dots_blue.png');
+
+  text-shadow: 0 1px 0 #FFF;
+}
+
+.scroller {
+  background: #FFF url('../img/subtle_dots.png');
+}
+
+.no-touch {
+
+  .header {
+    position: fixed;
+  }
+
+  .scroller {
+    margin-top: 375px;
+    position: relative;
+    z-index: 2;
+  }
+
+}
+
+.sponsors {
+  margin: 0 0 3em -1.5em;
+  text-align: center;
+}
+
+.sponsors li {
+  margin-left: 1.5em;
+  display: inline-block;
+  list-style: none;
+}
+
+.lt-ie8 .sponsors li {
+  margin-bottom: 1.5em;
+}
+
+.sponsors-small, .sponsors-large {
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.sponsors-large {
+
+  li {
+    width: 300px;
+  }
+
+  img {
+    width: 275px;
+  }
+}
+
+.sponsors-small li {
+  width: 175px;
+  margin-bottom: 1.5em;
+}
+
+.sponsors-cta {
+  font-weight: bold;
+  font-size: 0.875em;
+  text-decoration: underline;
+
+  &:hover {
+    color: #333;
+  }
+
+  span {
+    color: #333;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.inset {
+  @include border-radius(10px);
+  @include box-shadow(0 0 1px rgba(0,0,0,0.3),0px -1px 0px rgba(0,0,0,0.3));
+}
+
+.map-container {
+  position: relative;
+  margin: -1.5em 0;
+  height: 500px;
+}
+
+.map {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+}
+
+.map-caption {
+  position: relative;
+  z-index: 20;
+  padding: 0 1.5em;
+  margin: 1.5em 0;
+
+  border: 1px solid #999;
+
+  background: #FFF url('../img/subtle_dots.png');
+
+  @include box-shadow(1px 1px 10px rgba(0,0,0,0.3));
+}
+
+.kicker {
+  margin: 0.3125em 0;
+
+  font-size: 2em;
+  font-family: futura-pt, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+}
