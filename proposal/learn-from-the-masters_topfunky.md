@@ -16,7 +16,7 @@ As open source developers, we can read each others' code, but we rarely see deve
 Speaker Bio
 -----------
 
-![topfunky](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/topfunky.png)!
+![topfunky](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/topfunky.jpg)!
 
 Geoffrey Grosenbach is the founder of PeepCode screencasts, cutting edge tutorials for web developers and alpha geeks. PeepCode's growing staff published on Node.js, Backbone and CoffeeScript years before they appeared in books. He spends his time documenting undocumented Open Source software and producing mini documentaries with innovative developers and designers across the whole range of Open Source languages and software.
 
