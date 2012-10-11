@@ -23,6 +23,6 @@ Links
 -----
 
 * Blog: http://sintaxi.com
-* Company: https://chloi.io
-* Github: http://github.com/sintaxi
-* Twitter: http://twitter.com/sintaxi
+* Company: http://chloi.io
+* Github: https://github.com/sintaxi
+* Twitter: https://twitter.com/sintaxi
