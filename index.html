@@ -35,7 +35,7 @@
 
     <section>
 
-      <div class="sct-break"><h2 class="l-constrained sct-head">Information</h2></div>
+      <div class="sct-break"><h2 class="l-constrained sct-head" id="information">Information</h2></div>
 
       <div class="l-constrained clearfix">
 
@@ -59,7 +59,7 @@
 
     <section>
 
-      <div class="sct-break"><h2 class="l-constrained sct-head">Location</h2></div>
+      <div class="sct-break"><h2 class="l-constrained sct-head" id="location">Location</h2></div>
 
       <div class="map-container">
 
@@ -75,7 +75,7 @@
 
     <section>
 
-      <div class="sct-break"><h2 class="l-constrained sct-head">Speakers</h2></div>
+      <div class="sct-break"><h2 class="l-constrained sct-head" id="speakers">Speakers</h2></div>
 
       <div class="l-constrained">
 
@@ -181,7 +181,7 @@
 
     <section>
 
-      <div class="sct-break"><h2 class="l-constrained sct-head">Agenda</h2></div>
+      <div class="sct-break"><h2 class="l-constrained sct-head" id="agenda">Agenda</h2></div>
 
       <div class="l-constrained clearfix">
 
@@ -273,7 +273,7 @@
 
     <section>
 
-      <div class="sct-break"><h2 class="l-constrained sct-head">Sponsors</h2></div>
+      <div class="sct-break"><h2 class="l-constrained sct-head" id="sponsors">Sponsors</h2></div>
 
       <div class="l-constrained">
 
@@ -326,7 +326,7 @@
 
     <section class="contacts">
 
-      <div class="sct-break"><h2 class="l-constrained sct-head">Organizers</h2></div>
+      <div class="sct-break"><h2 class="l-constrained sct-head" id="organizers">Organizers</h2></div>
 
       <div class="l-constrained">
 
@@ -379,6 +379,14 @@
 
   <script type="text/javascript" src="//use.typekit.net/tei1jch.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+<script>
+// add anchor links for all section headers
+Array.prototype.slice.call(document.querySelectorAll('h2[id]')).forEach(function(h2) {
+  var a = document.createElement('a')
+  a.href = '#' + h2.id;
+  a.className = 'anchor';
+  h2.appendChild(a);
+})
+</script>
 </body>
 </html>
