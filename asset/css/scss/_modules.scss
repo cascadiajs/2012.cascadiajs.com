@@ -185,6 +185,15 @@
   text-transform: uppercase;
 }
 
+.agenda-sponsor {
+  display: block;
+  margin-top: 1em;
+
+  font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: .667em;
+}
+
 .contacts-img {
   width: 100px;
   margin: 1.5em;
@@ -280,29 +289,65 @@
   @include box-shadow(0 0 1px rgba(0,0,0,0.3),0px -1px 0px rgba(0,0,0,0.3));
 }
 
-.map-container {
-  position: relative;
-  margin: -1.5em 0;
-  height: 500px;
-}
-
 .map {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-}
-
-.map-caption {
-  position: relative;
-  z-index: 20;
-  padding: 0 1.5em;
-  margin: 1.5em 0;
+  height: 450px;
+  margin: -1.5em 0;
 
   border: 1px solid #999;
+  border-bottom: none;
+  border-top: none;
+}
 
-  background: #FFF url('../img/subtle_dots.png');
+.information-nav {
+  margin: 1em 0;
 
-  @include box-shadow(1px 1px 10px rgba(0,0,0,0.3));
+  a {
+    text-decoration: underline;
+
+    &:hover, &.active {
+      color: #495555;
+
+      .information-head {
+        color: $accent;
+      }
+    }
+
+  }
+
+}
+
+.information-head {
+  margin: 0.667em 0;
+  color: #495555;
+}
+
+.information-tab {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.no-js .information-tab:active {
+  display: block;
+}
+
+.hotels {
+  padding: 0 0 0 16px;
+
+  li {
+    margin: 1em 0;
+
+    font-size: 0.875em;
+    font-weight: normal;
+  }
+
+}
+
+.hotels-name {
+  font-weight: bold;
+  color: #333;
 }
 
 .kicker {
