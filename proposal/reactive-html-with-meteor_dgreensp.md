@@ -40,6 +40,8 @@ no DOM to generate static HTML.
 Speaker Bio
 -----------
 
+![David Greenspan](https://raw.github.com/cascadiajs/cascadiajs.github.com/master/proposal/images/dgreensp.jpg)
+
 Before coming to Meteor, David Greenspan created EtherPad, a web-based
 collaborative document editor, which was acquired by Google and
 open-sourced in 2009.  Before that he founded AppJet, an early
