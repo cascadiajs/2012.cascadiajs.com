@@ -105,6 +105,32 @@
   font-size: 1.75em;
 }
 
+.sct-head:hover .sct-anchor {
+  opacity: .6;
+}
+
+.sct-anchor {
+  position: relative;
+  top: -3px;
+  left: 8px;
+
+  font-size: 24px;
+  text-decoration: none;
+ 
+  opacity: 0;
+  color: #fff;
+
+  @include transition(0.5s);
+
+  &:before {
+    content: "\00B6";
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .lineup-block {
   margin-left: 1.5em;
   margin-bottom: 0.75em;
@@ -357,25 +383,4 @@
   font-family: futura-pt, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1.2;
-}
-/* section anchor links */
-h2[id]:hover a{
-  opacity: .6;
-}
-a.anchor {
-    text-decoration: none;
-    margin-left: 0.5em;
-    font-size: smaller;
-    opacity: 0;
-    color: #fff;
-    transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    -webkit-transition: .5s;
-}
-a.anchor:before{
-  content: "\00B6";
-}
-h2[id]:hover a.anchor:hover{
-  opacity: 1;
 }
