@@ -11,6 +11,7 @@
   <!-- <meta name="viewport" content="width=device-width"> -->
 
   <link rel="stylesheet" href="asset/css/site.css">
+  <link href="asset/css/jquery.minitwitter.css" media="all" rel="stylesheet" type="text/css"/>
   <script src="asset/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -43,7 +44,7 @@
           <img class="logo inset" alt="logo" src="asset/img/logo.png">
         </div>
 
-        <div class="l-double">
+        <div class="l-triple">
 
           <p class="kicker">The world of JavaScript has moved beyond the browser.</p>
 
@@ -208,7 +209,7 @@
           <span class="agenda-sponsor">Presented by<br><a href="http://aka.ms/cascadiajs"><img src="asset/img/azure-small.png" alt="Microsoft Azure"></a></span>
         </h3>
 
-        <table class="agenda l-double">
+        <table class="agenda l-triple">
           <tbody>
             <tr>
               <td class="agenda-time">8:00 - 9:00</td>
@@ -251,7 +252,7 @@
 
         <h3 class="agenda-head l-single first">Day Two / Nov 9</h3>
 
-        <table class="agenda l-double">
+        <table class="agenda l-triple">
           <tbody>
             <tr>
               <td class="agenda-time">8:00 - 9:00</td>
@@ -365,7 +366,7 @@
 
         </nav>
 
-        <div class="l-double">
+        <div class="l-triple">
 
           <section id="location" class="information-tab active">
 
@@ -456,6 +457,69 @@
 
     </section>
 
+    <section>
+      <div class="sct-break"><h2 class="l-constrained sct-head" id="community">Community</h2></div>
+      <div class="l-constrained clearfix">
+        <div class="l-double first">
+          <h3>Github</h3>
+          <style>
+          a.github-user,
+a.tweet {
+  display:block;
+  height:64px;
+  width:64px;
+  margin: 0px 4px 4px 0px;
+  float:left;
+  position: relative;
+  }
+
+.thumb {
+  display:block;
+  height:64px;
+  width:64px;
+  background:white 50% 50% no-repeat;
+  background-size:64px;
+  border-radius: 5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border: solid 1px darkgrey;
+  }
+
+.popup {
+  display:none;
+  position:absolute;
+  right:-235px;
+  top:-5px;
+  width:180px;
+  padding:5px 20px 5px 10px;
+  background:black;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  }
+
+.popup * { color:#fff; }
+
+.popup small {
+  display: block;
+  font-size: 12px;
+  }
+
+.tweet:hover,
+.github-user:hover { z-index: 200; }
+.tweet:hover .caret,
+.tweet:hover .popup,
+.github-user:hover .caret,
+.github-user:hover .popup { display:block; }
+          </style>
+          <div class="followers"></div>
+        </div>
+        <div class="l-double">
+          <h3 >Twitter</h3>
+          <div class="tweets"> <div class="tweets_header"><a href="http://twitter.com/cascadiajs">@CascadiaJS</a> on Twitter</div> <div class="content_tweets"> </div> <div class="tweets_footer"> <a href="http://twitter.com/cascadiajs"><span id="bird"></span></a> </div> </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -464,5 +528,87 @@
 
   <script type="text/javascript" src="//use.typekit.net/tei1jch.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="asset/js/vendor/jquery.minitwitter.js" type="text/javascript"></script>
+  <script src="asset/js/vendor/underscore-min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      function getTweets() { 
+        $(".content_tweets").miniTwitter({ 
+          query: "#cascadiajs OR @cascadiajs OR cascadiajs.com OR github.com/cascadiajs", 
+          limit: 10
+        });
+      }
+
+      getTweets();
+
+      setInterval(function(){ getTweets(); },10000);
+
+var githubWatcherProject = function(resp) {
+    var watcherProject = $('.follower-project');
+    var i = 0;
+    var max = 4; // Make a maximum of five requests before giving up.
+    var shuffled = _(resp.data).shuffle();
+
+    var getProjects = function(u) {
+        $.ajax({
+            url: 'https://api.github.com/users/' + u.login + '/repos',
+            dataType: 'jsonp',
+            success: function(resp) {
+                if (!resp.data.length) return;
+                var repo = _(resp.data)
+                    .chain()
+                    .shuffle()
+                    .detect(function(r) { return true }) //r.language === 'JavaScript' })
+                    .value();
+
+                if (!repo) {
+                    getProjects(shuffled[i++]);
+                } else {
+                    var template =
+                        ""
+                        + "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>"
+                        + " / "
+                        + "<a target='_blank' href='<%=html_url%>'>"
+                        + "<span class='title'><strong><%=name%></strong></span>"
+                        + "</a>"
+                        + "<span class='title'> <%=description%></span>"
+                        + "";
+                    var t = _(template).template(repo);
+                    watcherProject.append(t).addClass('loaded');
+                }
+
+            }
+        });
+    };
+    getProjects(shuffled[i]);
+};
+
+var githubWatchers = function() {
+    var watchers = $('.followers');
+    $.ajax({
+        // TODO: this endpoint only returns maximum 30 users. Implement random
+        // pagination so we see different groups of people.
+        //
+        // note: updated to show 100, but still should do random paging -th
+        url: 'https://api.github.com/repos/cascadiajs/cascadiajs.github.com/watchers?page=1&per_page=100',
+        dataType: 'jsonp',
+        success: function(resp) {
+            if (!resp.data.length) return;
+            //githubWatcherProject(resp);
+            var template =
+                "<a class='github-user' target='_blank' href='http://github.com/<%=login%>'>"
+                + "<span style='background-image:url(<%=avatar_url%>)' class='thumb' /></span>"
+                + "</a>";
+            var t = _(resp.data)
+                .map(function(i) { return _(template).template(i); })
+                .join('');
+            watchers.append(t);
+        }
+    });
+};
+
+githubWatchers();
+    });
+  </script>
 </body>
 </html>
