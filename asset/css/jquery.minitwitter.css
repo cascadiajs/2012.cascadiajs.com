@@ -95,6 +95,8 @@
 
 .mt_avatar img {
 	border-radius:5px;
+	height: 64px;
+	width: 64px;
 }
 
 .mt_header {

@@ -464,55 +464,71 @@
           <h3>Github</h3>
           <style>
           a.github-user,
-a.tweet {
-  display:block;
-  height:64px;
-  width:64px;
-  margin: 0px 4px 4px 0px;
-  float:left;
-  position: relative;
-  }
+          a.tweet {
+            display:block;
+            height:64px;
+            width:64px;
+            margin: 0px 4px 4px 0px;
+            float:left;
+            position: relative;
+            }
 
-.thumb {
-  display:block;
-  height:64px;
-  width:64px;
-  background:white 50% 50% no-repeat;
-  background-size:64px;
-  border-radius: 5px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  border: solid 1px darkgrey;
-  }
+            .thumb {
+              display:block;
+              height:64px;
+              width:64px;
+              background:white 50% 50% no-repeat;
+              background-size:64px;
+              border-radius: 5px;
+              -moz-border-radius:5px;
+              -webkit-border-radius:5px;
+              /*border: solid 1px darkgrey;*/
+              box-shadow: 0 0 1px rgba(0, 0, 0, 0.3),0px -1px 0px rgba(0, 0, 0, 0.3);
+              }
 
-.popup {
-  display:none;
-  position:absolute;
-  right:-235px;
-  top:-5px;
-  width:180px;
-  padding:5px 20px 5px 10px;
-  background:black;
-  border-radius:5px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  }
+            .popup {
+              display:none;
+              position:absolute;
+              right:-235px;
+              top:-5px;
+              width:180px;
+              padding:5px 20px 5px 10px;
+              background:black;
+              border-radius:5px;
+              -moz-border-radius:5px;
+              -webkit-border-radius:5px;
+              }
 
-.popup * { color:#fff; }
+            .popup * { color:#fff; }
 
-.popup small {
-  display: block;
-  font-size: 12px;
-  }
+            .popup small {
+              display: block;
+              font-size: 12px;
+              }
 
-.tweet:hover,
-.github-user:hover { z-index: 200; }
-.tweet:hover .caret,
-.tweet:hover .popup,
-.github-user:hover .caret,
-.github-user:hover .popup { display:block; }
+            .tweet:hover,
+            .github-user:hover { z-index: 200; }
+            .tweet:hover .caret,
+            .tweet:hover .popup,
+            .github-user:hover .caret,
+            .github-user:hover .popup { display:block; }
+            .followers-wrapper { 
+              padding: 12px 12px;
+              border:1px solid #e7e7e7;
+              border-radius:5px;
+              max-width:816px;
+              font:14px/18px "Tahoma",Helvetica,Arial,sans-serif;
+              color:#333;
+              background-color:#fff;
+              margin:auto;
+            }
           </style>
-          <div class="followers"></div>
+          <div class="followers-wrapper">
+            <div class="followers clearfix"></div>
+          </div>
+          <div class="followers-wrapper">
+            <div class="follower-project clearfix"></div>
+          </div>
         </div>
         <div class="l-double">
           <h3 >Twitter</h3>
@@ -543,71 +559,98 @@ a.tweet {
 
       setInterval(function(){ getTweets(); },10000);
 
-var githubWatcherProject = function(resp) {
-    var watcherProject = $('.follower-project');
-    var i = 0;
-    var max = 4; // Make a maximum of five requests before giving up.
-    var shuffled = _(resp.data).shuffle();
+      function GithubFollowers() {
+        var populateFollowerProject = function(followerInfos) {
+          var i = 0
+          var max = 5;
+          var shuffled = _(followerInfos).shuffle();
 
-    var getProjects = function(u) {
-        $.ajax({
-            url: 'https://api.github.com/users/' + u.login + '/repos',
-            dataType: 'jsonp',
-            success: function(resp) {
+          var findProject = function(u) {
+            $.ajax({
+              url: 'https://api.github.com/users/' + u.login + '/repos',
+              dataType: 'jsonp',
+              success: function(resp) {
+                alert(resp.data);
                 if (!resp.data.length) return;
+    
                 var repo = _(resp.data)
                     .chain()
                     .shuffle()
-                    .detect(function(r) { return true }) //r.language === 'JavaScript' })
+                    .detect(function(r) { r.language === 'JavaScript' })
                     .value();
 
                 if (!repo) {
-                    getProjects(shuffled[i++]);
+                  // user doesn't have a matching repo, so shuffle again, retry
+                  i += 1;
+                  if(i < max) { 
+                    findProject(shuffled[i++]);
+                  }
                 } else {
-                    var template =
-                        ""
-                        + "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>"
-                        + " / "
-                        + "<a target='_blank' href='<%=html_url%>'>"
-                        + "<span class='title'><strong><%=name%></strong></span>"
-                        + "</a>"
-                        + "<span class='title'> <%=description%></span>"
-                        + "";
-                    var t = _(template).template(repo);
-                    watcherProject.append(t).addClass('loaded');
+                  // found a repo, populate follower-project with content
+                  var template = ""
+                      + "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>"
+                      + " / "
+                      + "<a target='_blank' href='<%=html_url%>'>"
+                      + "<span class='title'><strong><%=name%></strong></span>"
+                      + "</a>"
+                      + "<span class='title'> <%=description%></span>"
+                      + "";
+
+                  var t = _(template).template(repo);
+                  $('.follower-project').append(t).addClass('loaded');
                 }
+              }
+            });
+          };
 
+          findProject(shuffled[i]);
+        };
+
+        this.resetFollowers = function() {
+          $('.followers').clear();
+        };
+
+        this.appendFollowers = function(skip, take) {
+          $.ajax({
+            // note: updated to show 100, but still should do random paging -th
+            url: 'https://api.github.com/repos/cascadiajs/cascadiajs.github.com/stargazers?page=' + Math.max(Math.ceil(skip/take), 1).toString() + '&per_page=' + take.toString(),
+            dataType: 'jsonp',
+            success: function(stargazers) {
+              $.ajax({
+                url: 'https://api.github.com/repos/cascadiajs/cascadiajs.github.com/forks?page=' + Math.max(Math.ceil(skip/take), 1).toString() + '&per_page=' + take.toString(),
+                dataType: 'jsonp',
+                success: function(forkers) {
+                  var followerInfos = {};
+
+                  _(stargazers.data).map(function(i) {
+                    followerInfos[i.login] = i; 
+                  });
+                  _(forkers.data).map(function(i) {
+                    followerInfos[i.owner.login] = i.owner; 
+                  });
+                  followerInfos = _(followerInfos).shuffle();
+                  var template =
+                      "<a class='github-user' target='_blank' githubid='<%=login%>' href='http://github.com/<%=login%>'>"
+                      + "<span style='background-image:url(<%=avatar_url%>)' class='thumb'></span>"
+                      + "</a>";
+                  var t = _(followerInfos)
+                      .map(function(i) { 
+                        return _(template).template(i); 
+                      })
+                      .join('');
+
+                  $('.followers').append(t);
+
+                  populateFollowerProject(followerInfos);
+                }
+              });
             }
-        });
-    };
-    getProjects(shuffled[i]);
-};
+          });
+        };
+      };
 
-var githubWatchers = function() {
-    var watchers = $('.followers');
-    $.ajax({
-        // TODO: this endpoint only returns maximum 30 users. Implement random
-        // pagination so we see different groups of people.
-        //
-        // note: updated to show 100, but still should do random paging -th
-        url: 'https://api.github.com/repos/cascadiajs/cascadiajs.github.com/watchers?page=1&per_page=100',
-        dataType: 'jsonp',
-        success: function(resp) {
-            if (!resp.data.length) return;
-            //githubWatcherProject(resp);
-            var template =
-                "<a class='github-user' target='_blank' href='http://github.com/<%=login%>'>"
-                + "<span style='background-image:url(<%=avatar_url%>)' class='thumb' /></span>"
-                + "</a>";
-            var t = _(resp.data)
-                .map(function(i) { return _(template).template(i); })
-                .join('');
-            watchers.append(t);
-        }
-    });
-};
-
-githubWatchers();
+      var github = new GithubFollowers();
+      github.appendFollowers(0, 100);
     });
   </script>
 </body>
