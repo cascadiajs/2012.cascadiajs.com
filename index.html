@@ -178,19 +178,26 @@
             <p class="lineup-text">Tinkers with APIs while consuming IPAs</p>
           </li>
           <li class="lineup-block">
-            <img class="lineup-img" src="asset/img/secret8.png" alt="">
-            <h3 class="lineup-name">To Be Announced</h3>
+            <img class="lineup-img" src="asset/img/chewbranca.png" alt="">
+            <h3 class="lineup-name">Russell Branca</h3>
+            <p class="lineup-text">Specializes in data driven JS apps and visualizations</p>
           </li>
           <li class="lineup-block">
-            <img class="lineup-img" src="asset/img/secret9.png" alt="">
-            <h3 class="lineup-name">To Be Announced</h3>
+            <img class="lineup-img" src="asset/img/molant.png" alt="">
+            <h3 class="lineup-name">Anton Molleda</h3>
+            <p class="lineup-text">Windows 8 developer at Plain Concepts</p>
           </li>
           <li class="lineup-block">
-            <img class="lineup-img" src="asset/img/secret10.png" alt="">
-            <h3 class="lineup-name">To Be Announced</h3>
+            <img class="lineup-img" src="asset/img/halffullheart.png" alt="">
+            <h3 class="lineup-name">Daniel Worthington</h3>
+            <p class="lineup-text">Product design and development at Simply Measured</p>
           </li>
           <li class="lineup-block">
             <img class="lineup-img" src="asset/img/secret11.png" alt="">
+            <h3 class="lineup-name">To Be Announced</h3>
+          </li>
+          <li class="lineup-block">
+            <img class="lineup-img" src="asset/img/secret12.png" alt="">
             <h3 class="lineup-name">To Be Announced</h3>
           </li>
         </ul>
@@ -213,7 +220,7 @@
           <tbody>
             <tr>
               <td class="agenda-time">8:00 - 9:00</td>
-              <td><b>Breakfast and Registration</b></td>
+              <td><b>Registration and Breakfast by <a href="http://eltana.com/"><img src="asset/img/eltana-small.png" alt="Eltana"></a> and <a href="http://www.toppotdoughnuts.com/index.html"><img src="asset/img/toppot-small.png" alt="Top Pot"></a></b></td>
             </tr>
             <tr>
               <td class="agenda-time">9:00 - 10:30</td>
@@ -229,7 +236,7 @@
             </tr>
             <tr>
               <td class="agenda-time">12:30 - 14:00</td>
-              <td><b>Lunch with <img src="asset/img/twilio-small.png" alt="Twilio"></b></td>
+              <td><b>Lunch with <img src="asset/img/twilio-small.png" alt="Twilio"> by <a href="http://www.skilletstreetfood.com/"><img src="asset/img/skillet.png" alt="Skillet"></a></b></td>
             </tr>
             <tr>
               <td class="agenda-time">14:00 - 15:30</td>
@@ -250,13 +257,15 @@
           </tbody>
         </table>
 
-        <h3 class="agenda-head l-single first">Day Two / Nov 9</h3>
+        <h3 class="agenda-head l-single first">Day Two / Nov 9
+          <span class="agenda-sponsor">Presented by<br><a href="https://skydrive.live.com"><img src="asset/img/skydrive-small.png" alt="SkyDrive"></a></span>
+        </h3>
 
         <table class="agenda l-triple">
           <tbody>
             <tr>
               <td class="agenda-time">8:00 - 9:00</td>
-              <td><b>Breakfast</b></td>
+              <td><b>Breakfast by <a href="http://eltana.com/"><img src="asset/img/eltana-small.png" alt="Eltana"></a> and <a href="http://www.toppotdoughnuts.com/index.html"><img src="asset/img/toppot-small.png" alt="Top Pot"></a></b></td>
             </tr>
             <tr>
               <td class="agenda-time">9:00 - 10:30</td>
@@ -272,7 +281,7 @@
             </tr>
             <tr>
               <td class="agenda-time">12:30 - 14:00</td>
-              <td><b>Lunch with <img src="asset/img/cheezburger-small.png" alt="Cheezburger"></b></td>
+              <td><b>Lunch with <img src="asset/img/cheezburger-small.png" alt="Cheezburger"> by <a href="http://marinationmobile.com/"><img src="asset/img/marination.png" alt="Marination"></b></td>
             </tr>
             <tr>
               <td class="agenda-time">14:00 - 15:30</td>
@@ -303,11 +312,18 @@
           <ul class="sponsors-large">
             <li>
               <a href="http://msdn.com/ie">
-                <img src="asset/img/ie.png" alt="Internet Explorer"></a>
+                <img src="asset/img/ie.png" alt="Internet Explorer">
+              </a>
             </li>
             <li>
               <a href="http://aka.ms/cascadiajs">
-                <img src="asset/img/azure.png" alt="Azure"></a>
+                <img src="asset/img/azure.png" alt="Azure">
+              </a>
+            </li>
+            <li>
+              <a href="https://skydrive.live.com">
+                <img src="asset/img/skydrive.png" alt="SkyDrive">
+              </a>
             </li>
           </ul>
           <ul class="sponsors-small">
@@ -334,11 +350,6 @@
             <li>
               <a href="http://cloudant.com">
                 <img src="asset/img/cloudant.png" alt="Cloudant">
-              </a>
-            </li>
-            <li>
-              <a href="http://adobe.com">
-                <img src="asset/img/adobe.png" alt="Adobe">
               </a>
             </li>
           </ul>
@@ -521,13 +532,14 @@
               color:#333;
               background-color:#fff;
               margin:auto;
+              margin-bottom: 64px;
+            }
+            .tweets { 
+              margin-bottom: 64px;
             }
           </style>
           <div class="followers-wrapper">
             <div class="followers clearfix"></div>
-          </div>
-          <div class="followers-wrapper">
-            <div class="follower-project clearfix"></div>
           </div>
         </div>
         <div class="l-double">
@@ -560,52 +572,6 @@
       setInterval(function(){ getTweets(); },10000);
 
       function GithubFollowers() {
-        var populateFollowerProject = function(followerInfos) {
-          var i = 0
-          var max = 5;
-          var shuffled = _(followerInfos).shuffle();
-
-          var findProject = function(u) {
-            $.ajax({
-              url: 'https://api.github.com/users/' + u.login + '/repos',
-              dataType: 'jsonp',
-              success: function(resp) {
-                alert(resp.data);
-                if (!resp.data.length) return;
-    
-                var repo = _(resp.data)
-                    .chain()
-                    .shuffle()
-                    .detect(function(r) { r.language === 'JavaScript' })
-                    .value();
-
-                if (!repo) {
-                  // user doesn't have a matching repo, so shuffle again, retry
-                  i += 1;
-                  if(i < max) { 
-                    findProject(shuffled[i++]);
-                  }
-                } else {
-                  // found a repo, populate follower-project with content
-                  var template = ""
-                      + "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>"
-                      + " / "
-                      + "<a target='_blank' href='<%=html_url%>'>"
-                      + "<span class='title'><strong><%=name%></strong></span>"
-                      + "</a>"
-                      + "<span class='title'> <%=description%></span>"
-                      + "";
-
-                  var t = _(template).template(repo);
-                  $('.follower-project').append(t).addClass('loaded');
-                }
-              }
-            });
-          };
-
-          findProject(shuffled[i]);
-        };
-
         this.resetFollowers = function() {
           $('.followers').clear();
         };
@@ -640,8 +606,6 @@
                       .join('');
 
                   $('.followers').append(t);
-
-                  populateFollowerProject(followerInfos);
                 }
               });
             }

@@ -199,13 +199,12 @@
   }
 
   td {
-    padding: 0.5em 4em;
-    padding-left: 1em;    
+    padding: 0.5em 1em;    
   }
 }
 
 .agenda-time {
-  width: 120px;
+  width: 100px;
   
   font-size: 0.875em;
   text-transform: uppercase;
@@ -259,12 +258,14 @@
 .sponsors {
   margin: 0 0 3em -1.5em;
   text-align: center;
-}
 
-.sponsors li {
-  margin: 0 0.75em;
-  display: inline-block;
-  list-style: none;
+  li {
+    margin: 0 0 1em 1.5em;
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+  }
+
 }
 
 .lt-ie8 .sponsors li {
@@ -274,21 +275,23 @@
 .sponsors-small, .sponsors-large {
   padding: 0;
   margin-bottom: 1em;
+  margin-left: -1.5em;
 }
 
 .sponsors-large {
 
   li {
-    width: 300px;
+    width: 256px;
   }
 
   img {
-    width: 275px;
+    width: 230px;
+    display: block;
   }
 }
 
 .sponsors-small li {
-  width: 175px;
+  width: 170px;
   margin-bottom: 1.5em;
 }
 
