@@ -1,7 +1,7 @@
 $block: 280px;
 
 .l-constrained {
-  width: $block * 4;
+  width: $block * 3;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -24,8 +24,14 @@ $block: 280px;
   margin-left: 1.5em;
 }
 
-.l-triple {
-  width: $block * 3 - 24px;
+.l-github {
+  width: 320px;
+  float: left;
+  margin-left: 1.5em;
+}
+
+.l-twitter {
+  width: 492px;
   float: left;
   margin-left: 1.5em;
 }

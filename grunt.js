@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         'CascadiaJS; Licensed MIT */'
     },
     lint: {
-      files: ['asset/js/*.js']
+      files: ['asset/js/main.js']
     },
     concat: {
       dist: {
@@ -69,7 +69,8 @@ module.exports = function(grunt) {
       },
       globals: {
         jQuery: true,
-        $: true
+        $: true,
+        _: true
       }
     },
     uglify: {}

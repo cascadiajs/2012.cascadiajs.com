@@ -387,3 +387,23 @@
   font-weight: bold;
   line-height: 1.2;
 }
+
+.followers-wrapper {
+  padding: 12px;
+
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+
+  background: #fff;
+}
+
+.followers {
+  margin-left: -4px;
+}
+
+.github-user-thumb {
+  width: 54px;
+  margin: 0 0 5px 5px;
+
+  border-radius: 5px;
+}
