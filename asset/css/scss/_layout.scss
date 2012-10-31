@@ -24,6 +24,12 @@ $block: 280px;
   margin-left: 1.5em;
 }
 
+.l-triple {
+  width: $block * 3 - 24px;
+  float: left;
+  margin-left: 1.5em;
+}
+
 .l-github {
   width: 320px;
   float: left;
