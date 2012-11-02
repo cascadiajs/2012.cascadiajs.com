@@ -36,13 +36,13 @@
   position: relative;
   top: 0;
 
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid #999;
 
-  background-color: $accent;
-  background-image: url('../img/subtle_dots_green.png');
+  background-color: #FFF;
+  background-image: url('../img/subtle_dots.png');
 
-  color: #FFF;
-  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+  color: $accent;
+  // text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
 
   -webkit-user-select: none;
   -moz-user-select: -moz-none;
@@ -57,14 +57,14 @@
   @include transition(0.1s ease top);
 
   &:hover {
-    background-color: #FFF;
-    background-image: url('../img/subtle_dots.png');
+    // background-color: #FFF;
+    // background-image: url('../img/subtle_dots.png');
 
-    border: 1px solid #999;
+    // border: 1px solid #999;
 
-    color: $accent;
+    // color: $accent;
     text-decoration: none;
-    text-shadow: none;
+    // text-shadow: none;
   }
 
   &:active {
