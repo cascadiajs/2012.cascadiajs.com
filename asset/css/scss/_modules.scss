@@ -391,6 +391,20 @@
   color: #333;
 }
 
+.party-list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.party-head {
+  border-bottom: 1px solid #ccc;
+}
+
+.party-date {
+  color: $accent;
+}
+
 .kicker {
   margin: 0.3125em 0;
 
