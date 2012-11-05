@@ -2,15 +2,38 @@ $(function() {
 
   // information section tabs
 
-  $('.information-nav a').click(function(e) {
-    var target = $(this).attr('href');
+  var infoTabs = function(tab) {
+    var target = $(tab).attr('href');
 
     $('.information-tab, .information-nav a').removeClass('active');
+    $(tab).addClass('active');
     $(target).addClass('active');
-    $(this).addClass('active');
+  };
 
+  $('.information-nav a').click(function(e) {
+
+    infoTabs(this);
     e.preventDefault();
+
   });
+
+  var url = document.location.toString(),
+      hashes = $('.information-nav a').map(function() {
+        return $(this).attr('href');
+      });
+
+  if (url.match('#')) {
+
+    var hash = '#' + url.split('#')[1];
+
+    for (var i = 0; i < hashes.length; i++) {
+      if (hash === hashes[i]) {
+        document.location.href = "#information";
+        infoTabs($('a[href=' + hash + ']'));
+      }
+    }
+
+  }
 
   // add anchor links for all section headers
 
