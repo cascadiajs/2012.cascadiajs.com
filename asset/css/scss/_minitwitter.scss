@@ -2,83 +2,31 @@
  	Copyright (c) 2012 Olivier Bréchet */
 
 .tweets {
-	border:1px solid #e7e7e7;
+	margin-bottom: 1.5em;
+	border:1px solid #ccc;
 	border-radius:5px;
-	max-width:816px;
-	font:14px/18px "Tahoma",Helvetica,Arial,sans-serif;
-	color:#333;
-	background-color:#fff;
-	margin:auto;
+	font-size:14px;
+	line-height: 1.3;
+	background:#fff;
+	color: #333;
 }
 
 .tweets a {
-	color:#0083b3;
+	color: $accent;
 	text-decoration:none;
-}
 
-.tweets a:hover {
-	color:#0083b3;
-	text-decoration:underline;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .tweet {
-	border-bottom:1px solid #e7e7e7;
+	border-top:1px solid #ccc;
 	padding:12px 12px;
-}
 
-.tweets_header {
-	border-bottom:1px solid #e7e7e7;
-	padding:12px 12px;
-	font-weight:bold;
-	font-size:16px;
-}
-
-.tweets_header a {
-	color:#333;
-	text-decoration:none;
-}
-
-.tweets_header a:hover {
-	color:#333;
-	text-decoration:underline;
-}
-
-.tweets_footer {
-	padding:6px 12px;
-}
-
-.tweets_footer span.powered {
-	font-size:9px;
-}
-
-.tweets_footer span.powered p {
-	margin:0;
-	text-align: center;
-	font-size:9px;
-	color:#999;
-}
-
-.tweets_footer span.powered a {
-	font-size:9px;
-	color:#999;
-	text-decoration:none;
-}
-
-.tweets_footer span.powered a:hover {
-	text-decoration:underline;
-}
-
-.tweets_footer #bird, .mt_footer .image_r {
-	display:block;
-	background:url("http://twimg0-a.akamaihd.net/a/1331143368/t1/img/twitter_web_sprite_icons.png") no-repeat;
-}
-
-
-.tweets_footer #bird{
-	margin:10px auto;
-	background-position: 0 0;
-	width: 34px;
-	height: 26px;
+	&:first-child {
+		border-top: none;
+	}
 }
 
 .time {
@@ -89,34 +37,32 @@
 
 .mt_avatar {
 	float:left;
-	margin-right:12px;
-	border-radius:5px;
-}
+	margin: 2px 0 0;
 
-.mt_avatar img {
-	border-radius:5px;
-	height: 64px;
-	width: 64px;
+	img {
+		border-radius:5px;
+		width: 48px;
+	}
 }
 
 .mt_header {
 	padding-bottom:4px;
 	padding-left:60px;
+
+	a {
+		font-weight:bold;
+		color:#333;
+		text-decoration:none;
+
+		&:hover {
+			font-weight: bold;
+		}
+	}
 }
 
 .mt_screen_name {
 	font-size:12px;
 	color:#999;
-}
-
-.mt_header a {
-	font-weight:bold;
-	color:#333;
-	text-decoration:none;
-}
-
-.mt_header a:hover {
-	font-weight:bold;
 }
 
 .mt_text {
@@ -127,18 +73,18 @@
 	color:#999;
 	font-size:12px;
 	padding-left:60px;
-}
 
-.mt_footer .image_r {
-	display:inline-block;
-	margin-bottom:-2px;
-	margin-right:4px;
-	background-position: -20px -290px;
-	width: 14px;
-	height:13px;
-	background-color:#999;
-}
+	.image_r {
+		display:inline-block;
+		margin-bottom:-2px;
+		margin-right:4px;
+		background-position: -20px -290px;
+		width: 14px;
+		height: 13px;
+		background-color:#999;
+	}
 
-.mt_footer a{
-	color:#999;
+	a {
+		color: #999;
+	}
 }
