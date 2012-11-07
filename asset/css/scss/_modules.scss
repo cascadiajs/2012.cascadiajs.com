@@ -213,11 +213,16 @@
 
 .agenda-sponsor {
   display: block;
-  margin-top: 1em;
+  margin-top: 1.5em;
 
   font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: .667em;
+  font-size: 14px;
+
+  a {
+    display: block;
+    margin-top: 1.5em;
+  }
 }
 
 .agenda-party {
