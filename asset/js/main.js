@@ -80,7 +80,9 @@ $(function() {
                   followerInfos[i.login] = i;
                 });
                 _(forkers.data).map(function(i) {
-                  followerInfos[i.owner.login] = i.owner;
+                  if (i && i.owner) {
+                    followerInfos[i.owner.login] = i.owner;
+                  }
                 });
                 followerInfos = _(followerInfos).shuffle();
                 var template =
