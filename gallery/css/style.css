@@ -144,7 +144,7 @@ body {
 .foot {
     width: 100%;
     height: 66px;
-    position: absolute;
+    position: relative;
     bottom: 1px;
     background-image: url('../images/foot_repeat.png');
     color: white;
