@@ -1,4 +1,3 @@
-
 .metroBig { font-size:36px; line-height:36px; }
 .live-tile, .list-tile
 {
@@ -46,8 +45,7 @@
 img.full , a.full
 {
 	display:block;
-	margin:0px;
-	height:100%;
+	margin:0px;	
 	width:100%;    
 }
 .list-tile>div { background-color:transparent; }
