@@ -285,7 +285,7 @@ $(function() {
                   followerInfos[i.login] = i;
                 });
                 _(forkers.data).map(function(i) {
-                  if (i && i.owner) { 
+                  if (i && i.owner) {
                     followerInfos[i.owner.login] = i.owner;
                   }
                 });
