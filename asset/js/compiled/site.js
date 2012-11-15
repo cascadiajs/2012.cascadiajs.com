@@ -205,6 +205,35 @@
 })( jQuery, window, document );
 $(function() {
 
+  // lazy video load
+
+  var videos = $('.lineup-video'),
+      docViewBottom = $(window).scrollTop() + $(window).height();
+
+  videos.each(function() {
+    this.id = $(this).data('video');
+    this.template = '<iframe width="620" height="349" src="http://www.youtube.com/embed/' + this.id + '?showinfo=0" frameborder="0" allowfullscreen></iframe>';
+    this.loaded = false;
+    this.elemTop = $(this).offset().top;
+
+    this.load = function() {
+      if (this.elemTop <= docViewBottom && this.loaded === false) {
+        $(this).html(this.template);
+        this.loaded = true;
+      }
+    };
+
+    this.load();
+  });
+
+  $(window).scroll(function() {
+    docViewBottom = $(window).scrollTop() + $(window).height();
+
+    videos.each(function() {
+      this.load();
+    });
+  });
+
   // information section tabs
 
   var infoTabs = function(tab) {
