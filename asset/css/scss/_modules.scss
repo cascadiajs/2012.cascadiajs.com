@@ -72,18 +72,25 @@
   }
 }
 
-.twitter {
-  background-image: url('../img/twitter.png');
+.social {
   height: 38px;
   width: 38px;
   display: inline-block;
-  margin-left: 1em;
   position: relative;
   top: 12px;
 
   &:hover {
     background-position: 0 40px;
   }
+}
+
+.twitter {
+  background-image: url('../img/twitter.png');
+  margin-left: 1em;
+}
+
+.youtube {
+  background-image: url('../img/youtube.png');
 }
 
 .sct-break {
@@ -131,6 +138,16 @@
   }
 }
 
+.video-block {
+  padding: 3em 0;
+  border-top: 1px solid #ccc;
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
 .lineup-block {
   margin-left: 1.5em;
   width: 148px;
@@ -148,8 +165,14 @@
   }
 }
 
+.lineup-video {
+  display: block;
+  float: left;
+  margin-left: 3em;
+}
+
 .lineup-img {
-  width: 100%;
+  width: 148px;
   position: relative;
   top: 0;
 
@@ -173,6 +196,16 @@
   margin: 0 0 0.75em;
 
   color: $accent;
+}
+
+.talk-title {
+  margin-top: 1em;
+
+  text-align: left;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 .agenda {
@@ -452,5 +485,10 @@
   border-radius: 10px;
 
   background: #FFF;
+}
 
+.footer-links {
+  margin-top: 3em;
+  
+  text-align: center;
 }
