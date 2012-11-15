@@ -207,8 +207,7 @@ $(function() {
 
   // lazy video load
 
-  var videos = $('.lineup-video'),
-      docViewBottom = $(window).scrollTop() + $(window).height();
+  var videos = $('.lineup-video');
 
   videos.each(function() {
     this.id = $(this).data('video');
@@ -217,6 +216,8 @@ $(function() {
     this.elemTop = $(this).offset().top;
 
     this.load = function() {
+      var docViewBottom = $(window).scrollTop() + $(window).height();
+
       if (this.elemTop <= docViewBottom && this.loaded === false) {
         $(this).html(this.template);
         this.loaded = true;
@@ -227,11 +228,7 @@ $(function() {
   });
 
   $(window).scroll(function() {
-    docViewBottom = $(window).scrollTop() + $(window).height();
-
-    videos.each(function() {
-      this.load();
-    });
+    videos.load();
   });
 
   // information section tabs
